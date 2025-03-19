@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      // Extract 'link' parameter from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const redirectUrl = urlParams.get("link");
+
+      // Validate URL to prevent abuse
+      function isValidUrl(url) {
+        try {
+          const parsedUrl = new URL(url);
+          return (
+            parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:"
+          );
+        } catch (_) {
+          return false;
+        }
+      }
+
+      if (redirectUrl && isValidUrl(redirectUrl)) {
+        setTimeout(() => {
+          window.location.href = redirectUrl;
+        }, 1000);
+      } else {
+        console.error("Invalid redirect URL:", redirectUrl);
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex items-center justify-center h-screen bg-black text-white text-center"
+  >
+    <div>
+      <h1 class="text-3xl font-bold text-orange-500">Redirecting...</h1>
+      <p class="mt-2">
+        If you are not redirected,
+        <a id="manualLink" href="#" class="text-orange-400 underline"
+          >click here</a
+        >.
+      </p>
+    </div>
+
+    <script>
+      // Set manual link fallback
+      const manualLink = document.getElementById("manualLink");
+      if (redirectUrl && isValidUrl(redirectUrl)) {
+        manualLink.href = redirectUrl;
+      } else {
+        manualLink.textContent = "Invalid Link";
+        manualLink.classList.remove("text-orange-400");
+      }
+    </script>
+  </body>
+</html>

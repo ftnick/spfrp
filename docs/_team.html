@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team - Springfield RP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-black text-white">
+    <nav class="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md z-50">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <a href="#" class="text-2xl font-bold text-orange-600">
+          <img src="images/logo.png" alt="SRP" class="inline-block h-10 mr-2" />
+          Springfield Roleplay Server
+        </a>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="#" class="hover:text-orange-500 transition-colors">Home</a>
+          </li>
+          <li>
+            <a
+              href="redirect.html?link=https://discord.gg/spfrp"
+              class="hover:text-orange-500 transition-colors"
+              >Discord</a
+            >
+          </li>
+          <li>
+            <a href="team.html" class="hover:text-orange-500 transition-colors"
+              >Our Team</a
+            >
+          </li>
+          <li>
+            <a
+              href="redirect.html?link=https://policeroleplay.community/join/spfrp"
+              class="bg-orange-600 hover:bg-orange-500 text-black px-4 py-2 rounded transition-colors"
+            >
+              Join Game
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="relative h-[70vh] bg-cover bg-center"
+      style="background-image: url('images/rp2.jpg')"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+      <div
+        class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 animate-fadeIn"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold text-orange-600 mb-4">
+          Meet Our Amazing Team
+        </h1>
+        <p class="max-w-2xl mx-auto text-lg md:text-xl mb-6">
+          Get to know the talented individuals behind Springfield RP.
+        </p>
+      </div>
+    </header>
+
+    <!-- Team Section with Pyramid Layout -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-orange-600 text-center mb-8">
+          Our Staff Team
+        </h2>
+
+        <!-- Ownership Section (Top of the Pyramid) -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-semibold text-orange-600 mb-6 text-center">
+            Ownership
+          </h3>
+          <div class="flex justify-center mb-8">
+            <!-- Owner -->
+            <div class="text-center">
+              <img
+                id="owner-avatar"
+                src=""
+                alt="Owner"
+                class="mx-auto rounded-full w-40 h-40 mb-4"
+              />
+              <h4 class="text-xl font-bold">Owner</h4>
+              <p class="text-gray-300">John Doe</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder Assistants Section -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-semibold text-orange-600 mb-6 text-center">
+            Founder Assistants
+          </h3>
+          <div class="flex justify-center mb-8 space-x-8">
+            <!-- Founder Assistant 1 -->
+            <div class="text-center">
+              <img
+                id="founder-assistant1-avatar"
+                src=""
+                alt="Founder Assistant 1"
+                class="mx-auto rounded-full w-40 h-40 mb-4"
+              />
+              <h4 class="text-xl font-bold">Founder Assistant</h4>
+              <p class="text-gray-300">Jane Smith</p>
+            </div>
+            <!-- Founder Assistant 2 -->
+            <div class="text-center">
+              <img
+                id="founder-assistant2-avatar"
+                src=""
+                alt="Founder Assistant 2"
+                class="mx-auto rounded-full w-40 h-40 mb-4"
+              />
+              <h4 class="text-xl font-bold">Founder Assistant</h4>
+              <p class="text-gray-300">David Johnson</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Co-Founder Assistants Section -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-semibold text-orange-600 mb-6 text-center">
+            Co-Founder Assistants
+          </h3>
+          <div class="flex justify-center mb-8 space-x-8">
+            <!-- Co-Founder Assistant 1 -->
+            <div class="text-center">
+              <img
+                id="co-founder-assistant1-avatar"
+                src=""
+                alt="Co-Founder Assistant 1"
+                class="mx-auto rounded-full w-40 h-40 mb-4"
+              />
+              <h4 class="text-xl font-bold">Co-Founder Assistant</h4>
+              <p class="text-gray-300">Emily Brown</p>
+            </div>
+            <!-- Co-Founder Assistant 2 -->
+            <div class="text-center">
+              <img
+                id="co-founder-assistant2-avatar"
+                src=""
+                alt="Co-Founder Assistant 2"
+                class="mx-auto rounded-full w-40 h-40 mb-4"
+              />
+              <h4 class="text-xl font-bold">Co-Founder Assistant</h4>
+              <p class="text-gray-300">Michael Green</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Team Members Section (Bottom of the Pyramid) -->
+        <div>
+          <h3 class="text-2xl font-semibold text-orange-600 mb-6 text-center">
+            Other Team Members
+          </h3>
+          <div class="flex justify-center space-x-8">
+            <!-- Team Member 1 -->
+            <div class="text-center">
+              <img
+                id="team-member1-avatar"
+                src=""
+                alt="Team Member 1"
+                class="mx-auto rounded-full w-40 h-40 mb-4"
+              />
+              <h4 class="text-xl font-bold">Community Manager</h4>
+              <p class="text-gray-300">Sophia Lee</p>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="text-center">
+              <img
+                id="team-member2-avatar"
+                src=""
+                alt="Team Member 2"
+                class="mx-auto rounded-full w-40 h-40 mb-4"
+              />
+              <h4 class="text-xl font-bold">Admin</h4>
+              <p class="text-gray-300">Lucas White</p>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="text-center">
+              <img
+                id="team-member3-avatar"
+                src=""
+                alt="Team Member 3"
+                class="mx-auto rounded-full w-40 h-40 mb-4"
+              />
+              <h4 class="text-xl font-bold">Moderator</h4>
+              <p class="text-gray-300">Isabella Wilson</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6">
+      <div class="container mx-auto text-center text-sm text-gray-400">
+        <p>© 2024 Springfield RP. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Function to fetch the Roblox avatar headshot image URL using user ID
+      function fetchAvatar(userId, imgId) {
+        fetch(
+          `https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${userId}&size=420x420&format=Png&isCircular=false`
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            const imageUrl = data.data[0].imageUrl; // Extract the image URL from the response
+            document.getElementById(imgId).src = imageUrl; // Set the image source for the respective element
+          })
+          .catch((error) => console.log("Error fetching avatar:", error)); // Log any errors
+      }
+
+      // Example usage with actual user IDs for your team members
+      fetchAvatar(2824126008, "owner-avatar"); // Replace with actual Owner ID
+      fetchAvatar(234567890, "founder-assistant1-avatar"); // Replace with actual Founder Assistant 1 ID
+      fetchAvatar(345678901, "founder-assistant2-avatar"); // Replace with actual Founder Assistant 2 ID
+      fetchAvatar(456789012, "co-founder-assistant1-avatar"); // Replace with actual Co-Founder Assistant 1 ID
+      fetchAvatar(567890123, "co-founder-assistant2-avatar"); // Replace with actual Co-Founder Assistant 2 ID
+      fetchAvatar(678901234, "team-member1-avatar"); // Replace with actual Team Member 1 ID
+      fetchAvatar(789012345, "team-member2-avatar"); // Replace with actual Team Member 2 ID
+      fetchAvatar(890123456, "team-member3-avatar"); // Replace with actual Team Member 3 ID
+    </script>
+  </body>
+</html>
